@@ -31,13 +31,14 @@ const rent = {
 
 // You can change below however you want
 
-const taxAsDecimal = parseFloat(tax['913']) / 100  //proper format for dividing numbers here
+const taxAsDecimal = parseFloat(tax['913']) / 100;  //proper format for dividing numbers here
 const startingAfterTax = salary * (1 - taxAsDecimal);
 const type = lodging + size;
 const balance = expenses['transport'] - expenses['food'] - rent[type];
 
-console.log(balance.toFixed(2))
+console.log(balance.toFixed(2));
 
 
 
 //should console.log a value of 2658.05
+
