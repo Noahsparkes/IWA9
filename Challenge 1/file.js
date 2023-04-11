@@ -8,8 +8,9 @@ const size = 'large'
 const expenses = {
     food: 51.7501,
     transport:  10.2,
+   
 }
-  
+   console.log(expenses)
 const tax = {
     734: '3%',
     234: '20%',
@@ -30,8 +31,13 @@ const rent = {
 
 // You can change below however you want
 
-const taxAsDecimal = tax.913 / 100
-const startingAfterTax = salary * 1 - taxAsDecimal
-const type = lodging + size
-const balance = expenses(transport) - expenses(food) - expenses(rent.type) 
+const taxAsDecimal = tax[913] / 100  //proper format for dividing numbers here
+const startingAfterTax = salary * (1 - taxAsDecimal);
+const type = lodging + size;
+const balance = expenses['transport'] - expenses['food'] - rent[type] 
+
 console.log(balance)
+
+
+
+//should console.log a value of 2658.05
